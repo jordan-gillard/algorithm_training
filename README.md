@@ -1,2 +1,2 @@
-# algorithm_training
-Solving algorithms for gags
+# Algorithm Practice
+Solving various algorithm problems for gags.

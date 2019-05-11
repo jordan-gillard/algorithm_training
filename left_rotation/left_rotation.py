@@ -1,4 +1,4 @@
-"""Taken from """
+"""Taken from www.hackerrank.com/challenges/ctci-array-left-rotation/"""
 from typing import List
 
 

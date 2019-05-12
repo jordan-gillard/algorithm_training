@@ -1,6 +1,6 @@
 import pytest
 
-from left_rotation.left_rotation import rotate_left
+from easy.left_rotation import rotate_left
 
 
 @pytest.mark.parametrize('array, number_of_rotations, expected', [

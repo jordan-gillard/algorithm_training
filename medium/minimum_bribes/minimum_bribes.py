@@ -16,3 +16,7 @@ def minimum_bribes(array: List[int]) -> Union[int, str]:
                 bribes += 1
 
     return bribes
+
+# TODO: implement with O(n) complexity by checking from the back
+#  towards the front and switching positions.
+#  https://www.hackerrank.com/challenges/new-year-chaos/editorial

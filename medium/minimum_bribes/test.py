@@ -1,6 +1,6 @@
 import pytest
 
-from medium.minimum_bribes import minimum_bribes
+from medium.minimum_bribes.minimum_bribes import minimum_bribes
 
 
 @pytest.mark.parametrize('array, expected', [

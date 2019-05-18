@@ -1,3 +1,5 @@
+import pytest
+
 from medium.climbing_leaderboard.algorithm import climbing_leaderboard
 
 long_input = [
@@ -35,5 +37,9 @@ long_expected = [
     '1']
 
 
-def test_leaderboard():
-    assert climbing_leaderboard([100, 100, 50, 40, 40, 20, 10], [5, 25, 50, 120]) == [6, 4, 2, 1]
+@pytest.mark.parametrize("leaderboard, alices_scores, expected", [
+    ([100, 100, 50, 40, 40, 20, 10], [5, 25, 50, 120], [6, 4, 2, 1]),
+    (long_input, long_alice_scores, long_expected)
+])
+def test_leaderboard(leaderboard, alices_scores, expected):
+    assert climbing_leaderboard(leaderboard, alices_scores) == expected

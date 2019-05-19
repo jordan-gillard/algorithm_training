@@ -16,19 +16,9 @@ def climbing_leaderboard(leaderboard_scores: List[int], alices_scores: List[int]
     place: int = len(leaderboard_scores) + 1
     index: int = 0
     alices_places: List[Optional[int]] = []
-    max_score: int = max(leaderboard_scores)
-    for score in leaderboard_scores:
-        if index == len(alices_scores):
-            break
-        if alices_scores[index] < score:
-            alices_places.append(place)
-            index += 1
-        elif alices_scores[index] == score:
+    for alice_score in alices_scores:
+        while index < len(leaderboard_scores) and alice_score >= leaderboard_scores[index]:
             place -= 1
-            alices_places.append(place)
             index += 1
-        elif alices_scores[index] > max_score:
-            alices_places.append(1)
-            index += 1
-        place -= 1
+        alices_places.append(place)
     return alices_places

@@ -1,5 +1,5 @@
 """Taken from www.hackerrank.com/challenges/between-two-sets/"""
-from typing import List
+from typing import List, Optional
 
 
 def get_total_x(array1: List[int], array2: List[int]) -> int:
@@ -9,13 +9,13 @@ def get_total_x(array1: List[int], array2: List[int]) -> int:
     """
     hpf: int = min(array2)  # highest possible factor
     lpf: int = max(array1)  # lowest possible factor
-    possible_factors = []
+    possible_factors: List[Optional[int]] = []
 
     for i in range(lpf, hpf+1):
         if hpf % i == 0:
             possible_factors.append(i)
 
-    first_array_factors = []
+    first_array_factors = List[Optional[int]] = []
     for i in possible_factors:
         i_is_good = True
         for val in array1:
@@ -24,7 +24,7 @@ def get_total_x(array1: List[int], array2: List[int]) -> int:
         if i_is_good:
             first_array_factors.append(i)
 
-    final = 0
+    final: int = 0
     for i in first_array_factors:
         i_is_good = True
         for num in array2:

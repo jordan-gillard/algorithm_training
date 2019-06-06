@@ -15,7 +15,7 @@ def get_total_x(array1: List[int], array2: List[int]) -> int:
         if hpf % i == 0:
             possible_factors.append(i)
 
-    first_array_factors = List[Optional[int]] = []
+    first_array_factors: List[Optional[int]] = []
     for i in possible_factors:
         i_is_good = True
         for val in array1:

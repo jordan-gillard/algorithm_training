@@ -1,6 +1,6 @@
 import pytest
 
-from medium.climbing_leaderboard.algorithm import climbing_leaderboard
+from climbing_leaderboard import climbing_leaderboard
 
 long_input = [295, 294, 291, 287, 287, 285, 285, 284, 283, 279, 277, 274, 274, 271, 270, 268, 268, 268, 264, 260, 259,
               258, 257, 255, 252, 250, 244, 241, 240, 237, 236, 236, 231, 227, 227, 227, 226, 225, 224, 223, 216, 212,

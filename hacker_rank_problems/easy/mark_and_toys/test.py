@@ -1,6 +1,6 @@
 import pytest
 
-from HackerRankProblems.easy import max_toys
+from hacker_rank_problems.easy import max_toys
 
 
 @pytest.mark.parametrize("toy_prices, budget, expected", [

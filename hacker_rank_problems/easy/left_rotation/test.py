@@ -1,6 +1,6 @@
 import pytest
 
-from HackerRankProblems.easy import rotate_left
+from hacker_rank_problems.easy import rotate_left
 
 
 @pytest.mark.parametrize('array, number_of_rotations, expected', [

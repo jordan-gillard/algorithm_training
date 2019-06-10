@@ -1,3 +1,4 @@
+"""Taken from www.hackerrank.com/challenges/camelcase/"""
 from string import ascii_uppercase
 
 

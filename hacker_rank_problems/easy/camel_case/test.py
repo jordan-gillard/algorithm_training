@@ -1,6 +1,6 @@
 import pytest
 
-from camel_case.alg import camel_case
+from easy.camel_case.alg import camel_case
 
 
 @pytest.mark.parametrize('string, expected', [

@@ -37,9 +37,9 @@ Windows users:
 
 # Hard-coded list for numbers to guess. We encourage you to modify this list,
 # as well as A, B, N below as you wish, for more thorough testing.
-CORRECT_GUESS_LIST = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+CORRECT_GUESS_LIST = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 A = 0
-B = 10
+B = 11
 N = 5
 assert (A < min(CORRECT_GUESS_LIST)) and (max(CORRECT_GUESS_LIST) <= B)
 NUM_TEST_CASES = len(CORRECT_GUESS_LIST)

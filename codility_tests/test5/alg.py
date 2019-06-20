@@ -1,7 +1,7 @@
 from typing import List
 
 
-def solution(A: List[int]):
+def max_run(A: List[int]):
     max_run = 1
     current_run = 1
     for i in range(len(A) - 1):

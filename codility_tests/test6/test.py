@@ -1,6 +1,6 @@
 import pytest
 
-from alg import solution
+from test6.alg import solution
 
 
 @pytest.mark.parametrize('word, expected', [

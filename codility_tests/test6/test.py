@@ -1,6 +1,6 @@
 import pytest
 
-from test6.alg import solution
+from test6.alg import is_palindrome
 
 
 @pytest.mark.parametrize('word, expected', [
@@ -14,4 +14,4 @@ from test6.alg import solution
     ('ABBA', False)
 ])
 def test_palindrome(word, expected):
-    assert solution(word) == expected
+    assert is_palindrome(word) == expected

@@ -1,6 +1,6 @@
 import pytest
 
-from test6.alg import is_palindrome
+from codility_tests.test6.alg import is_palindrome
 
 
 @pytest.mark.parametrize('word, expected', [

@@ -1,6 +1,6 @@
 import pytest
 
-from test5.alg import max_run
+from codility_tests.test5.alg import max_run
 
 
 @pytest.mark.parametrize('array, expected', [

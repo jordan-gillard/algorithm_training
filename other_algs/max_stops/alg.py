@@ -10,7 +10,7 @@ def min_refills(distance: int, max_run: int, gas_stations: List[int]) -> int:
         if gas_stations[index] - last_stop_value <= max_run:
             index += 1
             continue
-        elif gas_stations[index] - gas_stations[index-1] > max_run:
+        elif gas_stations[index] - gas_stations[index-1] > max_run or index == 0:
             return -1
         else:
             last_stop_value = gas_stations[index-1]
